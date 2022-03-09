@@ -1,1 +1,45 @@
 <p>insert works!</p>
+<div class="m-3">
+  <form [formGroup]="formInsert">
+    <div class="form-group">
+      <label for="id"> id</label>
+      <input type="text" class="form-control" id="id" aria-describedby="emailHelp" placeholder="Insert Your ID"
+             formControlName="id">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Insert Your Name "
+             formControlName="name">
+    </div>
+
+    <div class="form-group">
+      <label for="price">Price</label>
+      <textarea class="form-control" id="price" aria-describedby="emailHelp" placeholder="Insert Your Price"
+                formControlName="price"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="category">Category</label>
+      <textarea class="form-control" id="category" aria-describedby="emailHelp" placeholder="Insert Your Category"
+                formControlName="category"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="create_date">Create Date</label>
+      <textarea class="form-control" id="create_date" aria-describedby="emailHelp" placeholder="Insert Your Create Date"
+                formControlName="create_date"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="create_by">Create By</label>
+      <textarea class="form-control" id="create_by" aria-describedby="emailHelp" placeholder="Insert Your create_by"
+                formControlName="create_by"></textarea>
+    </div>
+    <br>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" type="submit" (click)="simpan()">Simpan</button>
+<!--      <button class="btn btn-primary" type="submit" (click)="update()" >Updte</button>-->
+    </div>
+  </form>
+</div>
