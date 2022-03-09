@@ -26,3 +26,5 @@ db-name: bootcamp
 
 - Buatlah Rest Api berdasarkan Crud tersebut
 - Buatlah Form dengan menggunakan Angular berdasarkan Rest API yang telah dibuat
+
+-Belum muncul list, dan belum bisa simpan
