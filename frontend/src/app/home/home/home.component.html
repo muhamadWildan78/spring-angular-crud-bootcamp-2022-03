@@ -1,0 +1,27 @@
+<p>home works!</p>
+<p>beranda works!</p>
+<table class="table table-responsive">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Category</th>
+    <th>Create Date</th>
+    <th>Create By</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let id of Listproducts">
+    <td>{{ id.id }}</td>
+    <td>{{ id.name }}</td>
+    <td>{{ id.price }}</td>
+    <td>{{ id.category }}</td>
+    <td>{{ id.create_date }}</td>
+    <td>{{ id.create_by }}</td>
+    <td>
+      <button  class="btn btn-dark" routerLink="/update/{{id.id}}">Update</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
